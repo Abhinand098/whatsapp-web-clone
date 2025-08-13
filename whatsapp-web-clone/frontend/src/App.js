@@ -36,7 +36,7 @@ const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"; // ✅
   // Fetch messages on load
   useEffect(() => {
     fetchMessages();
-  }, [fetchMessages]);
+  }, []);
 
   // Scroll to bottom when messages change
   useEffect(() => {
