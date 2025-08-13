@@ -31,7 +31,7 @@ const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"; // ✅
     return () => {
       socketRef.current.disconnect();
     };
-  }, [SOCKET_URL]);
+  }, []);
 
   // Fetch messages on load
   useEffect(() => {
